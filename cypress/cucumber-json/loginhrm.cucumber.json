@@ -1,0 +1,324 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "OrangeHRM Login Test",
+    "line": 1,
+    "id": "orangehrm-login-test",
+    "tags": [],
+    "uri": "loginhrm.feature",
+    "elements": [
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login to Orange HRM App with valid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "passed",
+              "duration": 49772000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User enter the valid userName",
+            "result": {
+              "status": "failed",
+              "duration": 4297000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"username\"]`, but never found it.\n    at Context.eval (cypress/e2e/loginhrm/loginhrm.js:9:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enter the valid password",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "click on the login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "verify login is successful",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-valid-credentials-by-parameterization",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login to Orange HRM App with valid credentials by parameterization",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "passed",
+              "duration": 1650000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User enter the valid userName \"Admin\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"username\"]`, but never found it.\n    at Context.eval (cypress/e2e/loginhrm/loginhrm.js:17:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User enter the valid password \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "click on the login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "verify login is successful",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-invalid-credentials-by-parameterization",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Login to Orange HRM App with Invalid credentials by parameterization",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "passed",
+              "duration": 1926000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "User enter the invalid userName \"Adm\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"username\"]`, but never found it.\n    at Context.eval (cypress/e2e/loginhrm/loginhrm.js:25:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User enter the valid password \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "click on the login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "verify login the error message \"Invalid credentials\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-fixtures",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Login to Orange HRM App with fixtures",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "passed",
+              "duration": 1055000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User enter the credentials and click on login button",
+            "result": {
+              "status": "passed",
+              "duration": 4906000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "verify login is successful",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-commands-files",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Login to Orange HRM App with commands files",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "passed",
+              "duration": 841000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "User enter the credentials and click on login button through commands",
+            "result": {
+              "status": "passed",
+              "duration": 6973000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "verify login is successful",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-xpath",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Login to Orange HRM App with xpath",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "passed",
+              "duration": 1384000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "User enter the valid xpath userName \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 3770000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "User enter the valid xpath password \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "click on the login button",
+            "result": {
+              "status": "passed",
+              "duration": 5381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "verify login is successful",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

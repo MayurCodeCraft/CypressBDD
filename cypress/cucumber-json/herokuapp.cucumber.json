@@ -1,0 +1,43 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Heroku Application Check",
+    "line": 1,
+    "id": "heroku-application-check",
+    "tags": [],
+    "uri": "herokuapp.feature",
+    "elements": [
+      {
+        "id": "heroku-application-check;testing-the-herokuapp",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Testing the herokuaPP",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Visit the Heroku website",
+            "result": {
+              "status": "passed",
+              "duration": 1505000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Fill the details",
+            "result": {
+              "status": "failed",
+              "duration": 184000000,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'location')\n    at hasNavigated (node_modules/cypress-iframe/dist/index.js:97:0)\n    at Object.eval (node_modules/cypress-iframe/dist/index.js:100:0)\n    at step (node_modules/cypress-iframe/dist/index.js:43:0)\n    at Object.eval [as next] (node_modules/cypress-iframe/dist/index.js:24:0)\n    at eval (node_modules/cypress-iframe/dist/index.js:18:0)\n    at new Promise (<anonymous>)\n    at __awaiter (node_modules/cypress-iframe/dist/index.js:14:0)\n    at Context.eval (node_modules/cypress-iframe/dist/index.js:79:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:3509:19)\n    at Promise._then (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1262:17)\n    at Promise._passThrough (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:4133:17)\n    at Promise.lastly.Promise.finally (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:4142:17)\n    at Object.onRunnableRun (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:162872:53)\n    at $Cypress.action (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:41484:28)\n    at Runnable.run (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:145460:13)\n    at next (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:155245:10)\n    at <unknown> (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:155289:5)\n    at timeslice (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:145800:27)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

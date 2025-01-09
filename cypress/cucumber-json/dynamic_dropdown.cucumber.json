@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "kodeit application Check",
+    "line": 1,
+    "id": "kodeit-application-check",
+    "tags": [],
+    "uri": "dynamic_dropdown.feature",
+    "elements": [
+      {
+        "id": "kodeit-application-check;visiting-the-kodeit-site-to-check-the-broken-links",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Visiting the kodeit site to check the broken links",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "Launch kodeit website",
+            "result": {
+              "status": "passed",
+              "duration": 10763000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "select the dropdown list",
+            "result": {
+              "status": "passed",
+              "duration": 3571000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "check the footer links",
+            "result": {
+              "status": "passed",
+              "duration": 91000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "check the mouseover event",
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "check the web table element",
+            "result": {
+              "status": "passed",
+              "duration": 94000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "check the alert event",
+            "result": {
+              "status": "passed",
+              "duration": 317000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

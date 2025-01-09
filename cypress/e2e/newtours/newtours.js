@@ -9,7 +9,7 @@ After(()=>{
 
     cy.reload()
     
-})
+}) 
 
 Given("open newtours application",()=>{
 

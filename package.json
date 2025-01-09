@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-tests": "npx cypress run --headed --browser chrome --spec cypress/e2e/loginhrm.feature",
+    "generate-multi-cucumber-html-report": "node cypress\\cucumber-html-report.js"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,19 @@
   "description": "",
   "devDependencies": {
     "cypress": "^13.17.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^3.8.0"
   },
-  "cypress-cucumber-preprocessor": { 
-    "nonGlobalStepDefinitions": true, 
-    "step_definitions": "cypress/e2e/newtours" 
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }

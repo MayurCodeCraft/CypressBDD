@@ -1,0 +1,141 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "New Tours App",
+    "line": 1,
+    "id": "new-tours-app",
+    "tags": [],
+    "uri": "newtours.feature",
+    "elements": [
+      {
+        "id": "new-tours-app;home-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Home Page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "open newtours application",
+            "result": {
+              "status": "passed",
+              "duration": 12560000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "userName",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mercury",
+                      "mercury"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I login in as following",
+            "result": {
+              "status": "passed",
+              "duration": 521000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 4082000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "new-tours-app;app-page",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "App Page",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "open newtours application",
+            "result": {
+              "status": "passed",
+              "duration": 2510000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "userName",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "mercury",
+                      "mercury"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I login in as following",
+            "result": {
+              "status": "passed",
+              "duration": 459000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "click on submit button",
+            "result": {
+              "status": "passed",
+              "duration": 934000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "verify title of the webpage",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected 'Login: Mercury Tours' to equal 'Welcome: Mercury Tours'\n    + expected - actual\n\n    -'Login: Mercury Tours'\n    +'Welcome: Mercury Tours'\n\n    at Context.eval (cypress/e2e/newtours/newtours.js:43:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
