@@ -1,9 +1,17 @@
 describe("iframe Test Suite",()=>{
 
+
+  before(()=>{
+
+    cy.visit("https://www.letskodeit.com/practice")
+
+  })
+
+
     it("iframe properties", () => {
 
 
-            cy.visit("https://www.letskodeit.com/practice")
+           
             cy.get('#courses-iframe').then((iframedata)=>{
 
             cy.wrap(iframedata.contents().find('body')).as('iframe')
@@ -13,24 +21,26 @@ describe("iframe Test Suite",()=>{
 
            //OR
 
-
            // const idata = iframedata.contents().find('body')
            // cy.wrap(idata).as('iframe')
 
          })
 
-        })
+       })
+    Cypress._.times(2,(k)=>{
 
+      it.only("iframe properties via plugin", () => {
 
-    it.only("check the ifrajme for heroku app",()=>{
+        cy.frameLoaded("#courses-iframe")  
+        cy.iframe().find('//h4[contains(text(),"Cypress.io")]').click()
 
-        cy.visit("https://the-internet.herokuapp.com/iframe")
-        cy.get('div[aria-label="Close"]').click()
-        cy.get('#mce_0_ifr').then(($iframe)=>{
-        const iframebody = $iframe.contents().find('body') 
+       })
 
-          cy.wrap(iframebody).type("Checking Iframe")
-        })
-      })
     })
+
+
+  })
+
+
+      
 

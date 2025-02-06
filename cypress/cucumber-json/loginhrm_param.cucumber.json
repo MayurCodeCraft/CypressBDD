@@ -1,0 +1,123 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "OrangeHRM Login Test",
+    "line": 1,
+    "id": "orangehrm-login-test",
+    "tags": [],
+    "uri": "loginhrm_param.feature",
+    "elements": [
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-valid-credentials-by-parameterization",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login to Orange HRM App with valid credentials by parameterization",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "undefined",
+              "duration": 65000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enter the valid userName \"Admin\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User enter the valid password \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "click on the login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "verify login is successful",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "orangehrm-login-test;login-to-orange-hrm-app-with-valid-credentials-by-parameterization",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login to Orange HRM App with valid credentials by parameterization",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch Orange HRM application url",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enter the valid userName \"Admin1\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User enter the valid password \"admin123\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "click on the login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "verify login is successful",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

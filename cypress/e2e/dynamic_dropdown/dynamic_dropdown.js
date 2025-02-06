@@ -45,6 +45,7 @@ Then("select the dropdown list",()=>{
 
     cy.get("#multiple-select-example").select(['apple','peach'])
     cy.screenshot()
+    
 })
 
 Then("check the elements in the iframe",()=>{

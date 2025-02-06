@@ -8,7 +8,7 @@ describe("Shadow Dom Test Suite",()=>{
 
           cy.get('book-app').shadow()
           .find('input[aria-label="Search Books"]')
-          .type("Software Test")
+          .type("Software Test") 
         
           //img[src^="images"]
 

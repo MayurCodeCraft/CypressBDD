@@ -26,10 +26,92 @@
 
 require('cypress-xpath');
 require('cypress-iframe');
+require('@4tw/cypress-drag-drop')
 
-Cypress.Commands.add("login",(username,password)=>{
+Cypress.Commands.add("login", (username, password) => {
 
     cy.get('input[name="username"]').type(username);
     cy.get('input[name="password"]').type(password);
     cy.get('button[type="submit"]').should('be.visible').click();
+})
+
+Cypress.Commands.add('verifyCountry', (country_code) => {
+
+    switch (country_code) {
+
+        case '/in/':
+
+            return 'India'
+
+        case '/uk/':
+
+            return "United Kingdom"
+
+        case '/ae/':
+
+            return 'United Arab Emirates'
+
+        case '/ca/':
+
+            return 'Canada (English)'
+
+        default:
+
+            return 'United Arab Emirates'
+
+
+    }
+})
+
+
+Cypress.Commands.add('getAPI', (pathparam) => {
+
+    cy.request({
+
+             method:"GET",
+             url:"https://gorest.co.in/public/v2/users/" + pathparam,
+             headers:{
+                'authorization' : "Bearer 16ad955d9ecdb9a727c05b3a365baea1b29cc8e0dcfc1aa864ec70dd84eb9210"
+               }
+
+    })
+
+})
+
+Cypress.Commands.add('postAPI',(payload)=>{
+
+    cy.request({
+
+        method:"POST",
+        url:"https://gorest.co.in/public/v2/users",
+        headers:{
+            'authorization' : "Bearer 16ad955d9ecdb9a727c05b3a365baea1b29cc8e0dcfc1aa864ec70dd84eb9210"
+           },
+        body:payload,
+        failOnStatusCode:false
+    })
+})
+
+Cypress.Commands.add('putAPI',(pathparam)=>{
+
+    cy.request({
+
+        method:"PUT",
+        url:"https://gorest.co.in/public/v2/users/" + pathparam,
+        headers:{
+            'authorization' : "Bearer 16ad955d9ecdb9a727c05b3a365baea1b29cc8e0dcfc1aa864ec70dd84eb9210"
+           }
+    })
+})
+
+Cypress.Commands.add('deleteAPI',(pathparam)=>{
+
+    cy.request({
+
+        method:"DELETE",
+        url:"https://gorest.co.in/public/v2/users/" + pathparam,
+        headers:{
+            'authorization' : "Bearer 16ad955d9ecdb9a727c05b3a365baea1b29cc8e0dcfc1aa864ec70dd84eb9210"
+           }
+    })
 })

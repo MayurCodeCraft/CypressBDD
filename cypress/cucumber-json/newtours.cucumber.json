@@ -22,7 +22,7 @@
             "name": "open newtours application",
             "result": {
               "status": "passed",
-              "duration": 12560000000
+              "duration": 1521000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "I login in as following",
             "result": {
               "status": "passed",
-              "duration": 521000000
+              "duration": 472000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "click on submit button",
             "result": {
               "status": "passed",
-              "duration": 4082000000
+              "duration": 1401000000
             }
           }
         ]
@@ -84,7 +84,7 @@
             "name": "open newtours application",
             "result": {
               "status": "passed",
-              "duration": 2510000000
+              "duration": 2151000000
             }
           },
           {
@@ -111,7 +111,7 @@
             "name": "I login in as following",
             "result": {
               "status": "passed",
-              "duration": 459000000
+              "duration": 475000000
             }
           },
           {
@@ -121,7 +121,7 @@
             "name": "click on submit button",
             "result": {
               "status": "passed",
-              "duration": 934000000
+              "duration": 1139000000
             }
           },
           {

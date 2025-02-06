@@ -40,6 +40,7 @@ describe("Documents Test Suite",()=>{
         cy.setCookie("username","Maxyam")
         cy.getCookie("username")
         cy.clearCookie("username")
+        
 
     
 

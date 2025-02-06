@@ -22,7 +22,7 @@
             "name": "Launch kodeit website",
             "result": {
               "status": "passed",
-              "duration": 10763000000
+              "duration": 10964000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "select the dropdown list",
             "result": {
               "status": "passed",
-              "duration": 3571000000
+              "duration": 1219000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "check the footer links",
             "result": {
               "status": "passed",
-              "duration": 91000000
+              "duration": 19000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "check the mouseover event",
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 5000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "check the web table element",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 12000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "check the alert event",
             "result": {
               "status": "passed",
-              "duration": 317000000
+              "duration": 112000000
             }
           }
         ]
